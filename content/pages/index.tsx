@@ -8,21 +8,21 @@ export const pages = {
     display: "Home",
     path: "/"
   } as PageInfo,
-  bio1: {
+  bpho1: {
     display: "Round 1",
-    path: "bio1",
+    path: "/bpho/r1",
   } as PageInfo,
-  bio2: {
+  bpho2: {
     display: "Round 2",
-    path: "bio2"
+    path: "/bpho/r2"
   } as PageInfo,
   grader: {
-    display: "Grader",
-    path: "grader"
+    display: "Challenges",
+    path: "/grader"
   } as PageInfo,
   resources: {
     display: "Resources",
-    path: "resources"
+    path: "/resources"
   } as PageInfo,
 };
 

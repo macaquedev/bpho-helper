@@ -1,6 +1,3 @@
-import { Test } from "content";
-import { Checker } from "utils";
-
 // order doesn't matter; it will be alphabetical
 export const tags = [
   "Data Structures",
@@ -31,6 +28,7 @@ export const difficulties = [
 
 export type Difficulty = typeof difficulties[number];
 export type Question = 1 | 2 | 3;
+export type Part = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z";
 
 export interface ProblemInfo {
   difficulty: Difficulty;
@@ -38,18 +36,13 @@ export interface ProblemInfo {
   original: string;
   year: number;
   question?: Question;
+  part?: Part;
   tags: Tag[];
   component: JSX.Element;
   editorialAuthors: string[];
   solutionAuthors: string[];
 }
 
-export interface BIO1ProblemInfo extends ProblemInfo {
-  checker?: Checker;
-  question: Question;
-  tests?: Test[];
-  timeLimit?: number;
-}
 export type DifficultyMap<T> = Record<Difficulty, T>;
 
 export const difficultyColors: DifficultyMap<string> = {

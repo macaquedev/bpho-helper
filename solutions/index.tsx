@@ -1,3 +1,3 @@
-export * from "./bio1";
-export * from "./bio2";
+export * from "./bpho1";
+export * from "./bpho2";
 export * from "./util";

@@ -1,0 +1,31 @@
+import { Box, Divider, Flex, Header, Problemset, Text } from "components";
+import { bpho2Problems, pages } from "content";
+
+export default function BPhO2() {
+  return (
+    <>
+      <Header page={pages.bpho2} />
+      <Flex
+        as="main"
+        overflow="auto"
+        maxWidth="100%"
+        px={5}
+        py={2}
+        justifyContent="space-around"
+      >
+        <Box maxWidth="85%" p={0}>
+          <Text typography="display.small" paddingTop="0.5em">Round 2</Text>
+          <Text typography="body.medium" paddingTop="0.5em">
+            These problems are all available on the online grader given to you after receiving
+            an invitation to the BIO Finals. To respect the organisers&apos; wishes, we will not provide a grader
+            here, but we will provide editorials and AC solutions.
+          </Text>
+          <Divider mb={3} mt={3} />
+          <Box maxWidth="full" p={0}>
+            <Problemset problems={bpho2Problems} />
+          </Box>
+        </Box>
+      </Flex>
+    </>
+  );
+}
