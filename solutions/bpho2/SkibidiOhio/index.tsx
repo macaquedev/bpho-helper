@@ -1,7 +1,7 @@
 import { Link, SText, STitle } from "components";
 import { brace } from "solutions/util";
 
-export const IntegerStrings = () => {
+export const SkibidiOhio = () => {
   return (
     <>
       <STitle>Observation</STitle>
@@ -52,8 +52,6 @@ export const IntegerStrings = () => {
         and a whole host of better explanations, see<Link href="https://cses.fi/problemset/task/2431">this CSES problem</Link>
         and the vast array of explanations available online.
       </SText>
-
-      <STitle>Code</STitle>
     </>
   );
 };

@@ -1,1 +1,1 @@
-export * from "./IntegerStrings";
+export * from "./SkibidiOhio";
