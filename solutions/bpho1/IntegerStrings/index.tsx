@@ -1,4 +1,4 @@
-import { Link, SCodeBlock, SText, STitle } from "components";
+import { Link, SText, STitle } from "components";
 import { brace } from "solutions/util";
 
 export const IntegerStrings = () => {
@@ -54,7 +54,6 @@ export const IntegerStrings = () => {
       </SText>
 
       <STitle>Code</STitle>
-      <SCodeBlock path="integerstrings/sol" />
     </>
   );
 };
